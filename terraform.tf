@@ -10,15 +10,14 @@ terraform {
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.6.0"
+      version = "3.6.1"
     }
   }
-  /* Uncomment this block to use Terraform Cloud for this tutorial
+  /* Uncomment this block to use Terraform Cloud for this tutorial*/
   cloud {
-    organization = "organization-name"
+    organization = "terraform-assoc-tutorial"
     workspaces {
       name = "learn-terraform-init"
     }
   }
-*/
 }
